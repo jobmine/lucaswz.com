@@ -1,64 +1,45 @@
 window.onload = function go() {
     var hash = (window.location.hash).replace('#', '');
-    if (hash == "me") gome();
-    else if (hash == "projects") goprojects();
-    else if (hash == "activities") goactivities();
-    else if (hash == "resume") goresume();
-    else if (hash == "contact") gocontact();
+    if (hash == "me") act1st();
+    else if (hash == "projects") act2nd();
+    else if (hash == "activities") act3rd();
+    else if (hash == "resume") act4th();
+    else if (hash == "contact") act5th();
+    parent.location.hash = '';
 }
 
-function goept() {
-	document.getElementById('index-page-left').innerHTML = "";
-	parent.location.hash = ''
+function clearpage(navitemname) {
+	document.getElementById('index-page').innerHTML = "";
+	$(".index-nav-menu-item").removeClass("actived");
+	$("#" + navitemname).addClass("actived");
+	parent.location.hash = '';
 }
 
-function goblg() {
-	goept();
-	window.location.hash = 'blog';
-	genBlg();
+function actlogo() {
+	$("#" + navitemname).addClass("actived");
 }
 
-function goabt() {
-	goept();
-	window.location.hash = 'about';
-	$("#index-page-left").append("About of Lucas is under Construction");
+function act1st() {
+	clearpage("nav1st");
+	$("#index-page").append("1");
 }
 
-function goprj() {
-	goept();
-	window.location.hash = 'projects';
-	genPrj();
-	initPrj();
+function act2nd() {
+	clearpage("nav2nd");
+	$("#index-page").append("2");
 }
 
-function goptg() {
-	goept();
-	window.location.hash = 'photography';
-	genPtg();
-	initPtg();
+function act3rd() {
+	clearpage("nav3rd");
+	$("#index-page").append("3");
 }
 
-function gouwat() {
-	goept();
-	window.location.hash = 'uwaterloo';
-	$("#index-page-left").append("U Waterloo page is under Construction. Please check back if you are redirected from University of Waterloo Engineering Ambassador website.");
+function act4th() {
+	clearpage("nav4th");
+	$("#index-page").append("4");
 }
 
-function gotedx() {
-	goept();
-	window.location.hash = 'tedx';
-	$("#index-page-left").append("TEDx page is under Construction. This page is about my TEDx stuff includes TEDxSonghuaRiver, TEDxHarbin, TEDxUW, TEDxWaterloo and TEDxToronto");
+function act5th() {
+	clearpage("nav5th");
+	$("#index-page").append("5");
 }
-
-function golin() {
-	goept();
-	window.location.hash = 'linkedin';
-	$("#index-page-left").append("LinkedIn page is under Construction (but maybe I can just redirect you to my linkedin page: linkedin.com/in/lucaswang)");
-}
-
-function goctt() {
-	goept();
-	window.location.hash = 'contact';
-	$("#index-page-left").append("Contact page is under Construction (or just simply send an email to Lucas : hello@lucaswz.com)");
-}
-
