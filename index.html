@@ -31,7 +31,6 @@
 
 		<!-- JavaScript Library -->
 		<script src="feel/moment.min.js"></script>
-		<script src="feel/lightbox-2.6.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 
 		<!-- Customized JavaScript -->
@@ -41,14 +40,14 @@
 	</head>	
 	<body>
 		<div id="top"></div>
-		<div id="index-nav">
+		<div id="index-nav" class="smooth1000">
 			<div id="index-nav-logo" class="index-nav-container" onclick="actlogo();"></div>
 			<div id="index-nav-menu" class="index-nav-container disselect">
-		        <div id="nav1st" class="index-nav-menu-item" onclick="act1st();">Me</div>
-		        <div id="nav2nd" class="index-nav-menu-item" onclick="act2nd();">Projects</div>
-		        <div id="nav3rd" class="index-nav-menu-item" onclick="act3rd();">Activities</div>
-		        <div id="nav4th" class="index-nav-menu-item" onclick="act4th();">Resume</div>
-		        <div id="nav5th" class="index-nav-menu-item" onclick="act5th();">Contact</div>
+		        <div id="nav1st" class="index-nav-menu-item smooth200" onclick="act1st();">Me</div>
+		        <div id="nav2nd" class="index-nav-menu-item smooth200" onclick="act2nd();">Projects</div>
+		        <div id="nav3rd" class="index-nav-menu-item smooth200" onclick="act3rd();">Activities</div>
+		        <div id="nav4th" class="index-nav-menu-item smooth200" onclick="act4th();">Resume</div>
+		        <div id="nav5th" class="index-nav-menu-item smooth200" onclick="act5th();">Contact</div>
 			</div>
 			<div id="index-nav-menu-right" class="index-nav-menu-item disselect" onclick="window.location='#me'">Hello</div>
 		</div>
@@ -61,5 +60,9 @@
 		</div>
 		<div id="index-page"></div>
 		<div id="index-foot" class="disselect"><span>&copy; 2014</span> Lucas</div>
+
+		<!-- Post Script -->
+		<script src="feel/lightbox-2.6.min.js"></script>
+
 	</body>
 </html>

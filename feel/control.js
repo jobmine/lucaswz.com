@@ -13,9 +13,12 @@ function clearpage(navitemname) {
 	$(".index-nav-menu-item").removeClass("actived");
 	$("#" + navitemname).addClass("actived");
 	parent.location.hash = '';
+	$("#index-nav").removeClass();
+	$("#index-nav").addClass("smooth1000");
 }
 
 function actlogo() {
+	clearpage("nav1st");
 	$("#" + navitemname).addClass("actived");
 }
 
@@ -32,6 +35,7 @@ function act2nd() {
 function act3rd() {
 	clearpage("nav3rd");
 	$("#index-page").append("3");
+	$("#index-nav").addClass("tedxred");
 }
 
 function act4th() {
