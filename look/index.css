@@ -1,0 +1,133 @@
+/*overwrite*/
+html {
+    background-color: #555769;
+    font-family: 'Gafata', sans-serif;
+}
+
+.disselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*Big Point*/
+#index-nav {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    background-color: #3BA0E3;
+    z-index: 9999;
+    min-width: 700px;
+    /*border: 1px solid black;*/
+}
+
+#index-show {
+    position: static;
+    width: 100%;
+    height: 650px;
+    background-color: #3BA0E3;
+    min-width: 750px;
+}
+
+#index-page {
+    width: 100%;
+    height: 1000px;    
+    position: static;
+    background-color: #fff;
+}
+
+#index-foot {
+    moz-box-shadow: inset 0 5px 12px -8px #333;
+    -o-box-shadow: inset 0 5px 12px -8px #333;
+    -webkit-box-shadow: inset 0 5px 12px-8px #333;
+    box-shadow: inset 0 5px 12px -8px #333;
+    color: #fff;
+    font-size: 80%;
+    text-align: center;
+    padding: 15px 2% 15px 2%;
+    z-index: 100;
+}
+
+#index-foot:hover {
+    cursor: default;
+}
+
+#index-foot span {
+    color: #797B91;
+}
+
+
+/*index nav bar*/
+
+.index-nav-container {
+    padding-left: 20px;
+    color: white;
+    font-size: 130%;
+    float: left;
+    height: 25px;
+}
+
+.index-nav-menu-item {
+    color: white;
+    float: left;
+    padding-bottom: 36px;
+    padding-top: 35px;
+    width: 100px;
+    text-align: center;
+    border-bottom: 6px solid #3BA0E3;
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    transition: all .2s ;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+}
+
+.index-nav-menu-item:hover {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255,255,255, 0.2);
+    border-bottom: 6px solid white;
+    cursor: pointer;
+}
+
+
+#index-nav-logo {
+    background-image: url("images/indexlogo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 30px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+#index-nav-logo:hover {
+    cursor: pointer;
+}
+
+#index-nav-menu {
+}
+
+#index-nav-menu-right {
+    float: right;
+    font-size: 130%;
+}
+
+/*index show*/
+#index-show:hover {
+    cursor: default;
+}
+
+#index-show-content {
+    padding-top: 170px;
+    font-size: 500%;
+    color: white;
+    padding-left: 40px;
+    font-weight: 600;
+    font-family: 'Ruda', sans-serif;
+}
+
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- meta tags -->
+		<meta charset="UTF-8">
+		<meta name="copyright" content="© 2014 Lucas Wang" />
+		<meta name="description" content="Lucas Wang's Personal Website" />
+		<meta name="keywords" content="Lucas Wang" />
+		<meta name="author" lang="en" content="Lucas Wang" />
+		<meta name="googlebot" content="all" />
+
+		<!-- social meta tags -->
+		<meta property="og:title" content="Lucas Wang's Personal Website" />
+		<meta property="og:image" content="look/favicon.png" /> 
+		<meta property="og:description" content="Hi from Lucas Wang" />
+		<meta property="og:url" content="http://www.lucaswz.com" />
+
+		<!-- title -->
+		<title>Lucas Wang</title>
+
+		<!-- Stylesheet Library -->
+		<link rel="stylesheet" href="look/global.css">
+		<link rel="stylesheet" href="look/normalize.css">
+		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Gafata|Ruda:400,700,900'>
+
+		<!-- Customized Stylesheet -->
+		<link rel="stylesheet" href="look/index.css">
+		<link rel="stylesheet" href="look/resume.css">
+		<link rel="stylesheet" href="look/resume-print.css">
+
+		<!-- JavaScript Library -->
+		<script src="feel/moment.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+		<!-- Customized JavaScript -->
+		<script src="feel/control.js"></script>
+		<script src="feel/index.js"></script>
+		<script src="feel/resume.js"></script>
+	</head>	
+	<body>
+		<div id="top"></div>
+		<div id="index-nav">
+			<div id="index-nav-logo" class="index-nav-container" onclick="window.location='#hello'"></div>
+			<div id="index-nav-menu" class="index-nav-container disselect">
+		        <div class="index-nav-menu-item" onclick="window.location='#me'">Me</div>
+		        <div class="index-nav-menu-item" onclick="window.location='#projects'">Projects</div>
+		        <div class="index-nav-menu-item" onclick="window.location='#activities'">Activities</div>
+		        <div class="index-nav-menu-item" onclick="window.location='#resume'">Resume</div>
+		        <div class="index-nav-menu-item" onclick="window.location='#contact'">Contact</div>
+			</div>
+			<div id="index-nav-menu-right" class="index-nav-menu-item disselect" onclick="window.location='#me'">Hello</div>
+		</div>
+		<div id="index-show" class="disselect">
+			<div id="index-show-content">
+				<p>Design Every Pixel.</p>
+				<p>Code Every Line.</p>
+				<p>With Love.</p>
+			</div>
+		</div>
+		<div id="index-page"></div>
+		<div id="index-foot" class="disselect"><span>&copy; 2014</span> Lucas</div>
+	</body>
+</html>
