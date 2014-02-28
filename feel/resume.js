@@ -1,10 +1,5 @@
 $(function() {
 
-/**
- * Helper functions
- *
- * TODO(mack): Consider moving them into separate file.
- */
 
 function getParameterByName(name) {
   name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
@@ -115,11 +110,32 @@ function updateSidebar() {
 }
 
 updateSidebar();
+$('.lhs.clearfix').followTo(browserHeight);
+$('.rhs.clearfix').css("margin-top", browserHeight - 400);
 
 $('.hresume > .lhs .toggle').click(function() {
   var collapse = !JSON.parse(localStorage.getItem('collapseSidebar'));
   localStorage.setItem('collapseSidebar', collapse);
   updateSidebar();
 });
-
 });
+
+
+$.fn.followTo = function (pos) {
+    var $this = this,
+        $window = $(window);
+
+    $window.scroll(function (e) {
+        if ($window.scrollTop() < pos) {
+            $this.css({
+                position: 'absolute',
+                top: pos
+            });
+        } else {
+            $this.css({
+                position: 'fixed',
+                top: 0
+            });
+        }
+    });
+};

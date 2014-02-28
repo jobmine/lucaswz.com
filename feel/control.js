@@ -8,11 +8,14 @@ window.onload = function go() {
     parent.location.hash = '';
 }
 
+var browserHeight = window.innerHeight;
+
+
 function initial(){
-	browserHeight = window.innerHeight;
 	$("#index-show").css("height",browserHeight);
+	$("#index-page").css("min-height",browserHeight);
     if (browserHeight > 400) {
-    	$("#index-show-content").css({"padding-top": browserHeight / 2 - 120, "font-size": "500%"});
+    	$("#index-show-content").css({"padding-top": browserHeight / 2 - 180, "font-size": "500%"});
     }
     else if (browserHeight < 400) {
     	$("#index-show-content").css({"padding-top": browserHeight / 2 + 5, "font-size": "150%"});
