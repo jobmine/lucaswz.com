@@ -19,6 +19,7 @@ body {
     width: 100%;
     background-color: #3BA0E3;
     min-width: 750px;
+    z-index: 3;
 }
 
 #index-page {

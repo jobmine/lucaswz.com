@@ -54,7 +54,6 @@ function act3rd() {
 
 function act4th() {
 	clearpage("nav4th");
-	$("#index-page-container").append("4");
 }
 
 function act5th() {

@@ -112,6 +112,11 @@ function updateSidebar() {
 updateSidebar();
 $('.lhs.clearfix').followTo(browserHeight);
 $('.rhs.clearfix').css("margin-top", browserHeight - 400);
+$('.options').css("top", browserHeight + 300);
+
+$('html,body').animate({
+          scrollTop: $("#index-page").offset().top
+      }, 'slow');
 
 $('.hresume > .lhs .toggle').click(function() {
   var collapse = !JSON.parse(localStorage.getItem('collapseSidebar'));
@@ -139,3 +144,5 @@ $.fn.followTo = function (pos) {
         }
     });
 };
+
+
