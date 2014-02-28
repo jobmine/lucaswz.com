@@ -1,6 +1,6 @@
 /*overwrite*/
 html {
-    background-color: #555769;
+    background-color: white;
     font-family: 'Gafata', sans-serif;
 }
 
@@ -12,13 +12,12 @@ html {
     background-color: #3BA0E3;
     z-index: 9999;
     min-width: 700px;
-    /*border: 1px solid black;*/
+    border: none;
 }
 
 #index-show {
     position: static;
     width: 100%;
-    height: 1000px;
     background-color: #3BA0E3;
     min-width: 750px;
 }
@@ -28,14 +27,9 @@ html {
     height: 1000px;    
     position: static;
     background-color: #fff;
-    padding: 20px 20px 20px 20px;
 }
 
 #index-foot {
-    moz-box-shadow: inset 0 5px 12px -8px #333;
-    -o-box-shadow: inset 0 5px 12px -8px #333;
-    -webkit-box-shadow: inset 0 5px 12px-8px #333;
-    box-shadow: inset 0 5px 12px -8px #333;
     color: #fff;
     font-size: 80%;
     text-align: center;
@@ -104,10 +98,6 @@ html {
 #index-nav-menu {
 }
 
-#index-nav-menu-right {
-    float: right;
-    font-size: 130%;
-}
 
 /*index show*/
 #index-show:hover {
@@ -115,13 +105,19 @@ html {
 }
 
 #index-show-content {
-    padding-top: 170px;
-    font-size: 500%;
+    width: auto;
     color: white;
-    padding-left: 40px;
+    margin-left: 40px;
     font-weight: 600;
     font-family: 'Ruda', sans-serif;
 }
+
+
+/*index page*/
+#index-page-container {
+    padding:  20px 20px 20px 20px;
+}
+
 
 /*overwrite*/
 
