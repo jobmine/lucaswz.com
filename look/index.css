@@ -19,7 +19,7 @@ body {
     width: 100%;
     background-color: #3BA0E3;
     min-width: 750px;
-    z-index: 3;
+    z-index: 9999;
 }
 
 #index-page {
@@ -27,6 +27,7 @@ body {
     height: auto;    
     position: static;
     background-color: #fff;
+    margin-top: 100px;
 }
 
 #index-foot {

@@ -5,6 +5,7 @@ window.onload = function scroll(){
 	        scrollTop: $("#index-page").offset().top - 100
 	    }, 'slow');
 	});
+
 	$("#index-nav-logo").click(function (e) {
 	    e.preventDefault();
 	    $('html,body').animate({
