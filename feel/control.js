@@ -64,10 +64,8 @@ function act3rd() {
   	
     	$.each(data.myactivities, function(i, projects) {
 			src = projects.src;
-			title = projects.title;
-			desc = projects.desc;
-			click = projects.click;
-			$("#action-activities-container").append("<a class='action-activities' href='mind/action/images/" + click + "' data-lightbox='activities' title='" + desc + "'><img src='mind/action/images/" + src + "'></a>");
+			link = projects.link;
+			$("#action-activities-container").append("<a class='action-activities' href='" + link + "'><img src='mind/action/images/" + src + "'></a>");
 		});
   }
   );
