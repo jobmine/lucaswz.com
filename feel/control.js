@@ -12,8 +12,8 @@ function initial(){
     }
     var hash = (window.location.hash).replace('#', '');
     if (hash === "me") act1st();
-    else if (hash === "projects") act2nd();
-    else if (hash === "activities") act3rd();
+    else if (hash === "visual") act2nd();
+    else if (hash === "action") act3rd();
     else if (hash === "resume") act4th();
     else if (hash === "contact") act5th();
 }
@@ -33,21 +33,45 @@ function actlogo() {
 
 function act1st() {
 	clearpage("nav1st");
-	$("#index-page-container").append("1");
 	parent.location.hash = 'me';	
+	loadMe();
 }
 
 function act2nd() {
 	clearpage("nav2nd");
-	$("#index-page-container").append("2");
-	parent.location.hash = 'projects';
+	parent.location.hash = 'visual';
+	$("#index-page-container").append("<div id=\"visual-projects-container\"</div>");
+		
+	$.getJSON("mind/visual/projects.json", function(data) {
+  	
+    	$.each(data.myprojects, function(i, projects) {
+			num = projects.num;
+			desc = projects.desc;
+			click = projects.click;
+			$("#visual-projects-container").append("<a class='visual-projects' href='mind/visual/images/f" + num + ".jpg' data-lightbox='projects' title='" + desc + "'><img src='mind/visual/images/f" + num + ".jpg'></a>");
+		});
+  }
+  );
 }
 
 function act3rd() {
 	clearpage("nav3rd");
-	$("#index-page-container").append("3");
 	$("#index-nav").addClass("tedxred");
-	parent.location.hash = 'activities';
+	parent.location.hash = 'action';
+	$("#index-page-container").append("<div id=\"action-activities-container\"</div>");
+		
+	$.getJSON("mind/action/activities.json", function(data) {
+  	
+    	$.each(data.myactivities, function(i, projects) {
+			src = projects.src;
+			title = projects.title;
+			desc = projects.desc;
+			click = projects.click;
+			$("#action-activities-container").append("<a class='action-activities' href='mind/action/images/" + click + "' data-lightbox='activities' title='" + desc + "'><img src='mind/action/images/" + src + "'></a>");
+		});
+  }
+  );
+
 }
 	
 function act4th() {

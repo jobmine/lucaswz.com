@@ -1,0 +1,15 @@
+.visual-projects img {
+	width: 250px;
+	height: 150px;
+	padding: 20px 0 0 20px;
+	-moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    transition: all .2s ;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    
+}
+
+.visual-projects img:hover {
+	opacity: .8;
+}

@@ -29,3 +29,36 @@ table {
 article, aside, footer, header, hgroup, nav, section, figure, figcaption {
     display: block;
 }
+
+.disselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.smooth200 {
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    transition: all .2s ;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+}
+
+.smooth1000 {
+    -moz-transition: all 1s linear;
+    -webkit-transition: all 1s linear;
+    transition: all 1s ;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+}
+
+.tedxred {
+    background-color: #AB3D3D !important;
+}
+
+.hehegreen {
+    background-color: #339B1F !important;
+}
