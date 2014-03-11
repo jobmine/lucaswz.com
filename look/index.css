@@ -114,3 +114,9 @@ body {
     font-weight: 600;
     font-family: 'Ruda', sans-serif;
 }
+
+#index-show-content note {
+    opacity: .7;
+    font-size: 20px;
+    font-weight: 300;
+}
