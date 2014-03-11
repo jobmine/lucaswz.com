@@ -68,6 +68,7 @@ li {
   margin-top: 5px;
   margin-left: 40px;
 }
+
 li:first-child {
   margin-top: 0;
 }
@@ -78,14 +79,9 @@ a {
 }
 
 a:hover, a:focus {
-  color: #000;
-  text-decoration: underline;
+  color: #1D86D1;
+  text-decoration: none;
   border-bottom: 0;
-}
-
-a:active, a:hover {
-  outline: 0;
-  color: #000;
 }
 
 a:focus {
@@ -99,8 +95,8 @@ a:focus {
   width: 100%;
   font-size: 15px;
   margin-left: 20px;
-  margin-top: 150px;
   text-align: center;
+  margin-top: -15px;
 }
 
 .option {
@@ -114,6 +110,7 @@ a:focus {
 .option:hover {
   opacity: 1.0;
 }
+
 
 .hresume {
   max-width: 1280px;
@@ -184,6 +181,7 @@ a:focus {
 .hresume:not(.collapsed) > .rhs {
   width: 100%;
   float: left;
+  cursor: default;
 }
 .hresume.collapsed > .rhs {
   overflow: hidden;
@@ -367,6 +365,7 @@ a:focus {
 }
 .project.experience {
   margin-top: 17px;
+  min-width: 500px;
 }
 
 .project.experience .header {
@@ -385,22 +384,24 @@ a:focus {
 .project.experience > .lhs {
   display: inline-block;
   padding-right: 10px;
-  width: 45%;
-  max-width: 400px;
+  width: 20%;
+  max-width: 222px;
   float: left;
   margin-top: 0;
 }
 
 .project.experience > .rhs {
   display: inline-block;
-  padding-left: 10px;
-  width: 55%;
-  float: right;
+  float: left;
 }
 
 .project.experience > .rhs .thumbnail {
   display: inline-block;
   width: 100%;
+}
+
+.education .header {
+  padding-bottom: 10px;
 }
 
 .education .summary,
@@ -422,6 +423,11 @@ img {
   vertical-align: middle;
 }
 
+.options img {
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
 .work img {
   margin-top: 10px;
   padding-right: 10px;
@@ -430,7 +436,8 @@ img {
 img.thumbnail {
   display: inline-block;
   height: auto;
-  max-width: 100%;
+  width: 100%;
+  min-width: 100px;
   padding: 2px;
   line-height: 1.428571429;
   background-color: #fff;

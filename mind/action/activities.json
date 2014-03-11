@@ -1,29 +1,25 @@
 {
     "myactivities": [
         {
-        	"click"	:	"tedx.jpg",
             "src"	: 	"tedxbar.jpg",
             "link"  :   "http://tedxsonghuariver.com",
             "title"	: 	"111",
             "desc"	: 	"12131231"
         },
         {
-        	"click"	:	"embbar.jpg",
-            "src"	: 	"embbar.jpg",
+            "src"	: 	"ambbar.jpg",
             "link"  :   "https://uwaterloo.ca/engineering-student-ambassadors/lucas",
             "title"	: 	"delet22222eURI",
             "desc"	: 	"12131231"
         },
         {
-            "click" :   "uwmccfbar.jpg",
-            "src"   :   "uwmccfbar.jpg",
+            "src"   :   "mccfbar.jpg",
             "link"  :   "http://uwmccf.com",
             "title" :   "rando3333mURI",
             "desc"  :   "12131231"
         },
         {
-        	"click"	:	"hsdfzbar.jpg",
-            "src"	: 	"hsdfzbar.jpg",
+            "src"	: 	"haacbar.jpg",
             "link"  :   "http://www.hsdfz.com.cn",
             "title"	: 	"rando3333mURI",
             "desc"	: 	"12131231"

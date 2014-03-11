@@ -1,0 +1,71 @@
+body {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+	font-size: 90%;
+}
+
+#zip {
+	border: 20px solid white;
+}
+
+#bar {
+	position: fixed;
+	float:left;
+	width:200px;
+}
+
+#main {
+	margin-left:210px;
+	width: 70%;
+	min-width: 200px;
+	max-width: 1200px;
+}
+
+
+#barfront {
+	color: #b8b8b8;
+	height: 100px;
+	font-weight: 100;
+}
+
+#barlogo {
+	background-image: url(lucas.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 35px;
+	width: 150px;
+}
+
+
+#barname {
+	
+}
+
+#bartitle {
+	font-size: 70%;
+}
+
+
+.nav {
+	color: #757575;
+	height: 30px;
+}
+
+.nav:hover {
+	color: #199afd;
+	cursor: pointer;
+	-webkit-transition: all 0.1s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.1s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.1s ease-out;  /* Opera 10.50–12.00 */
+          transition: all 0.1s ease-out;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+}
+
+#line {
+	display: block;
+    height: 1px;
+    width: 70px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 6px;
+}

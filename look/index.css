@@ -33,7 +33,7 @@ body {
 }
 
 #index-foot {
-    color: #fff;
+    color: #bbb;
     font-size: 80%;
     text-align: center;
     padding: 15px 2% 15px 2%;
@@ -113,9 +113,4 @@ body {
     margin-left: 40px;
     font-weight: 600;
     font-family: 'Ruda', sans-serif;
-}
-
-
-/*index page*/
-#index-page-container {
 }
