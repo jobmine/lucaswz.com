@@ -29,6 +29,17 @@ header {
   margin: 15px;
 }
 
+#note {
+  background-color: #5EB4ED;
+  height: 20px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 80%;
+  cursor: default;
+}
+
 
 #navbar {
   width:100%;
@@ -58,7 +69,7 @@ header {
 
 .navitem {
   width:100%;
-  height:130px;
+  height:65px;
   background-color:#fff;
   border-bottom: 1px solid #aaa;
 }
@@ -74,17 +85,16 @@ header {
   position:absolute;
   background-repeat:no-repeat;
   background-size:contain;
-  width: 90px;
-  height: 90px;
-  margin: 20px;
+  width: 45px;
+  height: 45px;
+  margin: 10px;
 }
 
 .navitem > div:nth-child(2) {
   float:right;
   overflow:hidden;
-  font-size: 40px;
-  margin: 40px;
-  font-weight: 600;
+  font-size: 20px;
+  margin: 20px;
 }
 
 #nav1st {
