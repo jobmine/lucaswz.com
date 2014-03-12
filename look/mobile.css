@@ -1,0 +1,117 @@
+html {
+  height:100%;
+  width:640px;
+  overflow: scroll;
+  font-family: 'Gafata', sans-serif;
+}
+
+body {
+  height:100%;
+  width:100%;
+  font-size:20pt;
+  margin:0;
+}
+
+header {
+  width:100%;
+  height:80px;
+  background-color:#3BA0E3;
+  overflow:hidden;
+}
+
+.hidden {
+  display:none;
+}
+
+
+#logo {
+  background-image: url("../look/logo/logo_white.png");
+  width: 150px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  float: left;
+  margin: 15px;
+}
+
+
+#navbar {
+  width:100%;
+  height:100%;
+  background-color:#e6e6e6;
+}
+
+#shadow {
+  background:-moz-linear-gradient(top,rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+/* FF3.6+ */
+  background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(0,0,0,0.65)),color-stop(100%,rgba(0,0,0,0)));
+/* Chrome,Safari4+ */
+  background:-webkit-linear-gradient(top,rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+/* Chrome10+,Safari5.1+ */
+  background:-o-linear-gradient(top,rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+/* Opera 11.10+ */
+  background:-ms-linear-gradient(top,rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+/* IE10+ */
+  background:linear-gradient(to bottom,rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+/* W3C */
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000',endColorstr='#00000000',GradientType=0);
+/* IE6-9 */
+  width:100%;
+  height:10px;
+  opacity:.7;
+}
+
+.navitem {
+  width:100%;
+  height:130px;
+  background-color:#fff;
+  border-bottom: 1px solid #aaa;
+}
+
+.navitem:hover {
+  background-color:#ecf6ff;
+  -webkit-transition:ease .2s;
+  cursor:pointer;
+}
+
+.navitem > div:first-child {
+  float:left;
+  position:absolute;
+  background-repeat:no-repeat;
+  background-size:contain;
+  width: 90px;
+  height: 90px;
+  margin: 20px;
+}
+
+.navitem > div:nth-child(2) {
+  float:right;
+  overflow:hidden;
+  font-size: 40px;
+  margin: 40px;
+  font-weight: 600;
+}
+
+#nav1st {
+  background-image: url("../look/images/about.png");
+}
+
+#nav2nd {
+  background-image: url("../look/images/portfolio.png");
+}
+
+#nav3rd {
+  background-image: url("../look/images/activities.png");
+}
+
+#nav4th {
+  background-image: url("../look/images/resume.png");
+}
+
+#nav5th {
+  background-image: url("../look/images/contact.png");
+}
+
+#nav6th {
+  background-image: url("../look/images/computer.png");
+}
