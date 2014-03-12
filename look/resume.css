@@ -14,10 +14,6 @@
     clear: both;
 }
 
-.clearfix {
-    *zoom: 1;
-}
-
 .hide {
   display: none;
 }
@@ -279,14 +275,13 @@ a:focus {
 
 .experience .skills {
   display: inline;
-  margin: 0;
-  padding 0;
   list-style: none;
 }
+
 .experience .skills .skill:not(.hide) {
   display: inline-block;
   margin: 0;
-  padding: 0;
+  padding: 1px;
 }
 
 .work.experience {
