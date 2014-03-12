@@ -1,15 +1,10 @@
 html {
-  height:100%;
-  width:640px;
-  overflow: scroll;
   font-family: 'Gafata', sans-serif;
 }
 
 body {
   height:100%;
   width:100%;
-  font-size:20pt;
-  margin:0;
 }
 
 header {
