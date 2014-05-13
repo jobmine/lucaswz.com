@@ -42,16 +42,21 @@ function act2nd() {
 	parent.location.hash = 'visual';
 	$("#index-page-container").append("<div id=\"visual-projects-container\"</div>");
 		
-	$.getJSON("mind/visual/projects.json", function(data) {
+
+	$("#visual-projects-container").append("<img src='mind/visual/portfolio.jpg'>");
+		
+	// $.getJSON("mind/visual/projects.json", function(data) {
   	
-    	$.each(data.myprojects, function(i, projects) {
-			num = projects.num;
-			desc = projects.desc;
-			click = projects.click;
-			$("#visual-projects-container").append("<a class='visual-projects' href='mind/visual/images/f" + num + ".jpg' data-lightbox='projects' title='" + desc + "'><img src='mind/visual/images/f" + num + ".jpg'></a>");
-		});
-  }
-  );
+ //    	$.each(data.myprojects, function(i, projects) {
+	// 		num = projects.num;
+	// 		desc = projects.desc;
+	// 		click = projects.click;
+	// 		$("#visual-projects-container").append("<a class='visual-projects' href='mind/visual/images/f" + num + ".jpg' data-lightbox='projects' title='" + desc + "'><img src='mind/visual/images/f" + num + ".jpg'></a>");
+	// 	});
+ //  }
+
+
+  // );
 }
 
 function act3rd() {
