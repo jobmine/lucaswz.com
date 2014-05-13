@@ -37,6 +37,9 @@ article, aside, footer, header, hgroup, nav, section, figure, figcaption {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    user-drag: none; 
+    -moz-user-select: none; 
+    -webkit-user-drag: none;
 }
 
 .smooth200 {
@@ -59,6 +62,6 @@ article, aside, footer, header, hgroup, nav, section, figure, figcaption {
     background-color: #AB3D3D !important;
 }
 
-.hehegreen {
-    background-color: #339B1F !important;
+.contactgreen {
+    background-color: #48C785 !important;
 }

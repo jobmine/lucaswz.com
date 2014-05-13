@@ -1,0 +1,101 @@
+#contact-container {
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#contact-container img {
+	width: 600px;
+	height: auto;
+	margin-top: -3px;
+}
+
+#contact-item {
+	position: absolute;
+	margin-left: 100px;
+	margin-top: -340px;
+}
+
+.contactitem {
+	padding-bottom: 10px;
+}
+
+#contact-item img {
+	height: 35px;
+	width: 35px;
+	margin-right: 10px;
+	margin-bottom: 15px;
+
+}
+
+#wechat img.qrcoder {
+	height: 150px !important;
+	width: 150px !important;
+}
+
+#bbm img.qrcoder {
+	height: 100px !important;
+	width: 100px !important;
+}
+
+#contact-item a {
+	font-size: 30px;
+	cursor: e-resize;
+	-moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    transition: all .2s ;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+}
+
+#contact-item a:hover {
+	opacity: .5;
+}
+
+#bbm {
+	margin-left: 250px;
+	margin-top: -150px;
+}
+
+#phone {
+	margin-left: 200px;
+	margin-top: -60px;
+}
+
+#linkedin {
+	margin-left: 230px;
+	margin-top: -60px;
+}
+
+#facebook {
+	margin-left: 120px;
+	margin-top: -60px;
+}
+
+#renren {
+	margin-left: 330px;
+	margin-top: -60px;
+}
+
+#skype a {
+	color: rgb(97,172,250);
+}
+
+#github a {
+	color: black;
+}
+#phone a {
+	color: rgb(128,203,129);
+}
+#email a {
+	color: rgb(235,199,20);
+}
+#facebook a {
+	color: rgb(105,149,228);
+}
+#linkedin a {
+	color: rgb(217,89,89);
+}
+#renren a {
+	color: rgb(77,134,233);
+}

@@ -24,3 +24,7 @@
 	width: 600px;
 	height: auto;
 }
+
+#visual-projects-container img:hover {
+	cursor: none;
+}

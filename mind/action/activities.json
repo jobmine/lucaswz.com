@@ -3,26 +3,20 @@
         {
             "src"	: 	"tedxbar.jpg",
             "link"  :   "http://www.ted.com/profiles/1571266",
-            "title"	: 	"111",
-            "desc"	: 	"12131231"
+            "title"	: 	"TEDx Organizer",
+            "desc"	: 	"I organized three TEDx event in Canada and China."
         },
         {
             "src"	: 	"ambbar.jpg",
             "link"  :   "https://uwaterloo.ca/engineering-student-ambassadors/lucas",
-            "title"	: 	"delet22222eURI",
-            "desc"	: 	"12131231"
+            "title"	: 	"Engineering Student Ambassador",
+            "desc"	: 	"Since 2013"
         },
         {
             "src"   :   "mccfbar.jpg",
             "link"  :   "http://uwmccf.com",
-            "title" :   "rando3333mURI",
-            "desc"  :   "12131231"
-        },
-        {
-            "src"	: 	"haacbar.jpg",
-            "link"  :   "http://www.hsdfz.com.cn",
-            "title"	: 	"rando3333mURI",
-            "desc"	: 	"12131231"
+            "title" :   "UWMCCF",
+            "desc"  :   "UW Mandarin Chinese Christina Fellowship"
         }
     ]
 }
