@@ -2,7 +2,7 @@ function loadResume() {
 	today = new Date();
 	randomNum = Math.floor(10000 + (Math.random() * ((99999 - 10000) + 1)));
   $("#index-page-container").append("<div id=\"resume-container\" class='disselect'></div>");
-  $("#resume-container").append("<div id='resume-container-img'><img src='mind/resume/notready.png' draggable='false'></div>");
+  $("#resume-container").append("<div id='resume-container-img'><img src='mind/resume/notready.jpg' draggable='false'></div>");
   $("#resume-container").append("<p>Oops.. My resume (14 Fall) is under updating. Please request a copy <a href=\"mailto:hello@lucaswz.com?subject=[Resume Request No.R" + today.getDate() + today.getMonth() + "-" + randomNum + " Through Lucaswz.com]\">here</a>. <br><br>Lucas is looking for any co-op (internship) opportunities for Sept 1 to Dec 31 2014 as a aprt of University of Waterloo Software Engineering Undergraduate Co-op Program.</p>");
 }
 
