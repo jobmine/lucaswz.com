@@ -1,23 +1,27 @@
+iframe {
+	display: none;
+}
+
 #contact-container {
-	width: 600px;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+
 }
 
 #contact-container img {
-	width: 600px;
+	max-width: 600px;
+	width: 100%;
 	height: auto;
-	margin-top: -3px;
 }
 
 #contact-item {
 	position: absolute;
-	margin-left: 100px;
-	margin-top: -340px;
+	margin-left: 5%;
+	margin-top: 20px;
 }
 
 .contactitem {
-	padding-bottom: 10px;
 }
 
 #contact-item img {
@@ -48,7 +52,7 @@
     -webkit-transform-style: preserve-3d;
 }
 
-#addresstablet {
+#contactbackground {
 	display: none;
 }
 
@@ -56,33 +60,11 @@
 	opacity: .5;
 }
 
-#bbm {
-	margin-left: 250px;
-	margin-top: -150px;
-}
-
-#phone {
-	margin-left: 200px;
-	margin-top: -60px;
-}
-
-#linkedin {
-	margin-left: 230px;
-	margin-top: -60px;
-}
-
-#facebook {
-	margin-left: 120px;
-	margin-top: -60px;
-}
-
-#renren {
-	margin-left: 330px;
-	margin-top: -60px;
-}
-
 #skype a {
 	color: rgb(97,172,250);
+}
+#addresstablet a {
+	color: #be4fe3;
 }
 #github a {
 	color: black;

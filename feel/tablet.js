@@ -1,28 +1,4 @@
-var browserHeight = window.innerHeight;
 
-
-function initial(){
-	$("#index-show").css("height",browserHeight);
-	$("#index-page").css("min-height",browserHeight);
-    if (browserHeight > 700) {
-    	$("#index-show-content").css({"padding-top": browserHeight / 2 - 180, "font-size": "80px"});
-    }
-    else if (browserHeight > 400 && browserHeight <= 700) {
-    	$("#index-show-content").css({"padding-top": browserHeight / 2 - browserHeight/4, "font-size": browserHeight/10 + 10});
-    }
-    else if (browserHeight < 400 && browserHeight >= 300) {
-    	$("#index-show-content").css({"padding-top": browserHeight / 2 - 40, "font-size": "30px"});
-    }
-    else if (browserHeight < 300) {
-    	$("#index-show-content").css({"padding-top": "110px", "font-size": "30px"});
-    }
-    var hash = (window.location.hash).replace('#', '');
-    if (hash === "me") act1st();
-    else if (hash === "portfolio") act2nd();
-    else if (hash === "activity") act3rd();
-    else if (hash === "resume") act4th();
-    else if (hash === "contact") act5th();
-}
 
 function clearpage(navitemname) {
 	document.getElementById('index-page-container').innerHTML = "";

@@ -1,8 +1,9 @@
 function loadContact() {
 	$("#index-page-container").append("<div id=\"address\" ></div>");
 	$("#index-page-container").append("<div id=\"contact-container\" class=\"disselect\"></div>");
-	$("#contact-container").append("<img src='mind/contact/contact.jpg' draggable='false'>");
+	$("#contact-container").append("<img id='contactbackground' src='mind/contact/contact.jpg' draggable='false'>");
 	$("#contact-container").append("<div id=\"contact-item\"></div>");
+	$("#contact-item").append("<div id=\"addresstablet\" class=\"contactitem\"></div>");
 	$("#contact-item").append("<div id=\"skype\" class=\"contactitem\"></div>");
 	$("#contact-item").append("<div id=\"phone\" class=\"contactitem\"></div>");
 	$("#contact-item").append("<div id=\"email\" class=\"contactitem\"></div>");
@@ -25,5 +26,6 @@ function loadContact() {
 	$("#renren").append("<img src=\"mind/contact/renren.png\" draggable='false'><a href=\"http://www.renren.com/285555417\" target=\"_blank\">RR</a>");
 	$("#wechat").append("<img src=\"mind/contact/wechat.png\" draggable='false'><a href='mind/contact/wech.png' data-lightbox='qrcode' title='WeChat QRCode'><img class=\"qrcoder\" src=\"mind/contact/wech.png\" draggable='false'></a>");
 	$("#bbm").append("<img src=\"mind/contact/bbm.png\" draggable='false'><a href='mind/contact/bbmcode.png' data-lightbox='qrcode' title='BlackBerry BBM QRCode'><img class=\"qrcoder\" src=\"mind/contact/bbmcode.png\" draggable='false'></a>");
+	$("#addresstablet").append("<img src=\"mind/contact/address.png\" draggable='false'><a href='https://goo.gl/maps/wpXRz'>VeloCity, U Waterloo</a>");
 
 }
