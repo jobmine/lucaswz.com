@@ -20,6 +20,7 @@
 #resume-container p {
 	padding-top: 20px;
 	color: grey;
+	padding-bottom: 50px;
 }
 
 #resume-container p:hover {
