@@ -116,7 +116,19 @@ body {
 }
 
 #index-show-content note {
-    opacity: .7;
     font-size: 20px;
     font-weight: 300;
 }
+
+#index-show-content note a {
+    color: rgb(155, 205, 241);
+}
+
+
+#index-show-content note a:hover {
+    color: rgb(255, 181, 112);
+}
+
+
+
+

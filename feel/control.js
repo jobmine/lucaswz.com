@@ -22,6 +22,7 @@ function initial(){
     else if (hash === "activity") act3rd();
     else if (hash === "resume") act4th();
     else if (hash === "contact") act5th();
+    else if (hash === "thanks") thanksfeedback();
 }
 
 function clearpage(navitemname) {
@@ -96,4 +97,9 @@ function act5th() {
 	$("#index-nav").addClass("contactgreen");
 	loadContact();
 	parent.location.hash = 'contact';
+}
+
+
+function thanksfeedback() {
+	$("index-show-content").replaceWith("<p>\"</p><p>Gotcha. Thanks!</p><p>\"</p>");
 }
