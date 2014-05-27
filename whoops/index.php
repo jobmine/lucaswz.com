@@ -55,7 +55,7 @@
 
                         <label for="location">Location</label>
                         <input id="location" name="location"  type="text" placeholder="City, State">
-                        <input id="us-location" type="radio" name="location2" value="USD" checked>USA
+                        <input id="us-location" type="radio" name="location2" value="USA" checked>USA
                         <input id="ca-location" type="radio" name="location2" value="Canada">Canada
 
 
