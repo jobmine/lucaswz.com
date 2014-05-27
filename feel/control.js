@@ -16,17 +16,19 @@ function initial(){
     else if (browserHeight < 300) {
     	$("#index-show-content").css({"padding-top": "110px", "font-size": "30px"});
     }
-    var hash = (window.location.hash).replace('#', '');
-    if (hash === "me") act1st();
-    else if (hash === "portfolio") act2nd();
-    else if (hash === "activity") act3rd();
-    else if (hash === "resume") act4th();
-    else if (hash === "contact") act5th();
-    else if (hash === "thanks") thanksfeedback();
+
+    var data = {};
+	var tokens = location.hash.substring(1).split('&');
+    if (tokens[0] === "me") act1st();
+    else if (tokens[0] === "portfolio") act2nd();
+    else if (tokens[0] === "activity") act3rd();
+    else if (tokens[0] === "resume") act4th();
+    else if (tokens[0] === "contact") act5th();
+    else if (tokens[0] === "thanks") thanksfeedback(tokens[1],tokens[2]);
 }
 
 function clearpage(navitemname) {
-	document.getElementById('index-page-container').innerHTML = "";
+	$("#index-page-container").empty();
 	$(".index-nav-menu-item").removeClass("actived");
 	$("#" + navitemname).addClass("actived");
 	$("#index-nav").removeClass();
@@ -100,6 +102,6 @@ function act5th() {
 }
 
 
-function thanksfeedback() {
-	$("index-show-content").replaceWith("<p>\"</p><p>Gotcha. Thanks!</p><p>\"</p>");
+function thanksfeedback(company, name) {
+	$("#index-show-content").empty().append("<p>Gotcha " + name + ",</p><p>I will try " + company + "</p><p>another time!</p>");
 }

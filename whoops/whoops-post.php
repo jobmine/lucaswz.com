@@ -10,6 +10,6 @@ $fp = fopen("whoops.txt", "a");
 $savestring = $company . " - " . $location . ", " . $location2 . "\n" . $name . " / " . $email . " (" . $reply . ")\n" . $comment . "\n\n------------------------------\n\n";
 fwrite($fp, $savestring);
 fclose($fp);
-header("Location: http://lucaswz.com/#thanks");
+header("Location: http://lucaswz.com/#thanks&" . $company . "&" . $name);
 die();
 ?>
