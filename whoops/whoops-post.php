@@ -10,6 +10,8 @@ $fp = fopen("whoops.txt", "a");
 $savestring = $company . " - " . $location . ", " . $location2 . "\n" . $name . " / " . $email . " (" . $reply . ")\n" . $comment . "\n\n------------------------------\n\n";
 fwrite($fp, $savestring);
 fclose($fp);
-header("Location: http://lucaswz.com/#thanks&" . $company . "&" . $name);
+$companyurl = ucfirst(strtok($company, " "));
+$nameurl = ucfirst(strtolower(strtok($name, " ")));
+header("Location: http://lucaswz.com/#thanks&" . $companyurl . "&" . $nameurl);
 die();
 ?>
