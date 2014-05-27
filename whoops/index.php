@@ -15,14 +15,15 @@
 		<!-- Stylesheet Library -->
         <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Gafata|Ruda:400,700,900'>
         <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+        <link rel="stylesheet" href="../look/lightbox.css">
 
         <!-- Customized Stylesheet -->
 		<link rel="stylesheet" href="whoops.css">
 
         <!-- JavaScript Library -->
-        <script src="feel/moment.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 		<script src="jquery.autosize.min.js"></script>
+        <script src="../feel/lightbox-2.6.min.js"></script>
 
 
         <!-- Customized JavaScript -->
@@ -33,10 +34,10 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-44410117-1', 'lucaswz.com');
+  ga('create', 'UA-44410117-3', 'lucaswz.com');
   ga('send', 'pageview');
 
-		</script>
+    </script>
 
 	</head>	
 	<body>
@@ -78,24 +79,20 @@
             </div>
 
             <div class="l-box-lrg pure-u-1 pure-u-med-3-5">
-                <h4>Yay! Waterloo!</h4>
+                <h4>Yay Waterloo!</h4>
                 <p>
-                    I want to thanks for your consideration. I chose Waterloo Engineering for its co-op program - students get real experiences through hacking with you, all awesome companies in the world. 
+                    First of all, I want to thank you for your consideration! <br>
+                    Two years ago, I chose Waterloo Engineering for its co-op program - students get real experiences through hacking with you, all awesome companies in the world. 
                 </p>
 
-                <h4>Please Feedback</h4>
+                <h4>Tell Lucas</h4>
                 <p>
-                    There is always a delight message will be sent if an interview is scheduled. However, if we are not selected, the application will be gone silently. Instead, a feedback will be really helpful! 
-                </p>
-                
-                <h4>Feedback What?</h4>
-                <p>
-                    Please let me know any details made you decided not to select me - expect low level code monkeys / my resume is too playful / company's culture or style / did not keep penguin as a pet ...
+                    When we are not selected, the application will just disappear silently. However, I believe a suggestion from hire managers will be really helpful! Please tell me anything may make you decide to (not) select me - you expect low level code monkeys / my resume is too playful / different design style / ...
                 </p>
 
                 <h4>Appreciation</h4>
                 <p>
-                    Your feedback is way more valuable than anything can be purchased. To show my appreciation, a photo of my hug, a chosen $5 gift card or a Waterloo famous <a href="">Goose Plush</a> will be sent to you.
+                    Your feedback is way more valuable than anything can be purchased. To show my appreciation, a photo of my hug, a chosen $5 gift card or a Waterloo famous <a href='gooseplush.jpg' data-lightbox='gooseplush' title='The Amazing Goose Plush'>Goose Plush</a> will be sent to you.
                 </p>
 
                 
