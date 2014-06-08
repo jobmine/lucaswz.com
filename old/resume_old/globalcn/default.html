@@ -1,0 +1,447 @@
+<html lang="en">
+
+<head>
+
+	<!-- People do NOT simply copy others' site. -Lucas -->
+
+<!--
+		88          88        88    ,ad8888ba,         db         ad88888ba   
+		88          88        88   d8"'    `"8b       d88b       d8"     "8b  
+		88          88        88  d8'                d8'`8b      Y8,          
+		88          88        88  88                d8'  `8b     `Y8aaaaa,    
+		88          88        88  88               d8YaaaaY8b      `"""""8b,  
+		88          88        88  Y8,             d8""""""""8b           `8b  
+		88          Y8a.    .a8P   Y8a.    .a8P  d8'        `8b  Y8a     a8P  
+		88888888888  `"Y8888Y"'     `"Y8888Y"'  d8'          `8b  "Y88888P"   
+-->
+
+	<base target="_top" />
+	
+	<meta charset="utf-8" /> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="keywords" content="Software, Engineering, Engineer, Lucas, Wang, Zitian, Univeristy, Waterloo"/>
+    <meta name="description" content="Something about Lucas (Wang-Zitian)" />
+    <meta name="author" content="Lucas Wang-Zitian, me@wangzitian.com" />   
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	
+	<!--[if lt IE 9]>  
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>  
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>  
+	<![endif]--> 
+	
+	<!--[if lt IE 7]>
+    <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+    <![endif]-->
+	
+	<title>Lucas' Résumé</title>
+	<link rel="stylesheet" type="text/css" href="../../style/wangzitian.css"> 
+	<link rel="Shortcut Icon" href="../../style/icon.ico" />
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../js/jquery-1.7.2.min.js"><\/script>')</script>
+  	<script type="text/javascript" src="../../js/jquery.history.js"></script>
+  	<script type="text/javascript" src="../../js/lucas.title.js"></script>
+	
+</head>
+
+<body>
+
+<script type="text/javascript">
+	animatetitle();
+</script>
+   
+<script type="text/javascript">
+		$(function() {
+			var $targets = $('.targets'),
+				$body = $('body, html'),
+				$sidebar = $('#sidebar a'),
+				$long = $('#long a'),
+				$print = $('#print a'),
+        History = window.History;
+
+      if ( !History.enabled ) {
+        return false;
+      };
+
+		  $('.find').click(function(e) {
+		  	e.preventDefault();
+		  	$targets.removeClass("selected");
+        History.pushState(null, null, e.target.href);
+
+		  	var $target = $(location.hash);
+		  	$target.addClass("selected");
+		  	var targetOffset = $target.offset().top - 100;
+		  	$body.animate({scrollTop: targetOffset}, 400);
+		  });
+
+		  $sidebar.click(function(e) {
+		  	e.preventDefault();
+        History.pushState(null, null, null);
+		  	$targets.removeClass("selected");
+
+		  	$body.animate({scrollTop: 0}, 400);
+		  	$(e.target).css("opacity", 0)
+		  });
+
+		  $(document).scroll(function() {
+		  	var threshold = document.getElementById("work").getBoundingClientRect();
+
+		  	if ($sidebar.css("opacity") === '0' && window.scrollY > threshold.top && window.innerWidth > 500) {
+		  		$sidebar.css("opacity", 1);
+		  	} else if ($sidebar.css("opacity") === '1' && (window.scrollY < threshold.top || window.innerWidth < 500)) {
+		  		$sidebar.css("opacity", 0);
+		  	}
+		  	
+		  	if ($lang.css("opacity") === '.7' && window.scrollY > threshold.top && window.innerWidth > 500) {
+		  		$lang.css("opacity", 0);
+		  	} else if ($sidebar.css("opacity") === '0' && (window.scrollY < threshold.top || window.innerWidth < 500)) {
+		  		$lang.css("opacity", .7);
+		  	}
+		  	
+		  	if ($print.css("opacity") === '.7' && window.scrollY > threshold.top && window.innerWidth > 500) {
+		  		$print.css("opacity", 0);
+		  	} else if ($sidebar.css("opacity") === '0' && (window.scrollY < threshold.top || window.innerWidth < 500)) {
+		  		$print.css("opacity", .7);
+		  	}
+		  });
+		  
+		});
+</script>
+
+	<div id="lang"><a href="../language.html""><img src="flag.png" width="30" height="30"></a></div>
+	<div id="print"><a href="#" onclick="window.print()" target="_blank"><img src="../image/printer.png" width="30" height="30"></a></div>
+
+
+
+	<div id="sidebar"><a href="#">↑ Top</a></div>
+	
+    <div id="container">
+    	    	<h1><a id="legalName" href="http://wangzitian.com">"LUCAS" 王 子天</a></h1>
+
+    	<div id="contact"> <p id="major">滑铁卢大学 | <b1>1A 软件工程</b1><p>
+
+        <ul class="blockList">
+        	<li>uwid 20430004</li>
+        </ul>
+          
+        <ul class="blockList">
+        	<li><a href="http://maps.google.ca/maps?q=404-203+lester+street+waterloo&client=safari&oe=UTF-8&hnear=203+Lester+St,+Waterloo,+Ontario+N2L+3W3&gl=ca&t=m&z=16" target="_blank">404-203 Lester 滑铁卢</a></li>
+        </ul>
+	
+	
+    	<ul class="blockList">
+            <li><a href="https://github.com/wozent" target="_blank">wangzitian.com</a></li>
+            <li><a href="mailto:me@wangzitian.com">me@wangzitian.com</a></li>
+        </ul>
+          
+        <ul class="blockList">
+            <li>+1 226 622 2222 (加拿大)</li>
+            <li>+86 139 3656 6886 (中国)</li>
+        </ul>
+    </div>
+        
+    <h2>技能综述</h2>
+    <article id="technical">
+      	<ul>
+        	<li>
+        	
+        		设计者 &ndash; 移动设备应用程序 (
+        		<a href="#iosapp" class="find">iOS系统</a>
+        		, <a href="#androidapp" class="find">安卓系统</a>
+        		), 网站 (
+        		<a href="#user_web" class="find">面向用户</a>
+        		, <a href="#info_web" class="find">面向信息</a>
+        		), <a href="#webapp" class="find">网页应用</a>
+        		, 图形 &amp; 影视 (
+        		<a href="#film" class="find">短片制作</a>, 
+        		<a href="#graphics" class="find">图形设计</a>
+        		) 以及 
+        		<a href="#interior" class="find">室内设计</a>
+        	
+        	</li>
+        	
+        	<br>
+        	
+        	<li>
+        	
+        		爱 <b2>网站</b2> &ndash; 从工作和个人项目中获取 JavaScript (
+        		<a href="#canvas" class="find">Canvas</a>, 
+        		<a href="#jquery" class="find">jQuery</a> 等), 
+        		<a href="#htmlcss" class="find">HTML5/CSS3</a>, 
+        		PHP/MySQL平台 (
+        		<a href="#info_web" class="find">1</a> 
+        		<a href="#phpsql" class="find">2</a> ) 
+        		经验
+        	 
+        	</li>
+    			
+        	<li>
+        	
+        		有相关 面向对象语言 (
+	        	<a href="#java" class="find">Java</a>
+	        	), 功能性语言 (
+	        	<a href="#python" class="find">Python</a>
+	        	), 和底层语言 (
+	        	<a href="#c" class="find">C</a>
+	        	) 编程能力， 
+	        	从
+	        	<a href="#learnskills" class="info">之前的工作中</a>
+                看出可以快速学习技能
+        	
+            
+        	</li>
+          
+          <li>
+        	
+        		在多次活动、工作中，熟练使用图形、电影剪辑特效设计类软件 (
+	        	<a href="#iosapp" class="find">Adobe Photoshop</a>, 
+	        	<a href="#info_web" class="find">Adobe Illustrator</a>, 
+	        	<a href="#film" class="find">Final Cut Pro</a>).
+        	</li>
+          
+          
+        	<li>
+        		流利使用英文、
+        		<a href="http://wangzitian.tumblr.com/image/36458511656" target="_blank" class="find">中文普通话</a>
+        		以及弹奏钢琴
+        		        	
+        	</li>
+          
+        	<li>
+	        	连续被曾经的雇主评价为“很好的工作伙伴” (
+	        	<a href="#leadership" class="find">领导才能</a>
+	        	),
+	        	 并拥有很强的职业道德
+        	
+        	</li>	
+    	</ul>
+    </article>      
+      
+      
+      
+      <h2>教育情况</h2>
+      <article>
+      	<ul class="noBullets" id="education">
+      	
+          	<li><b2>滑铁卢大学</b2>, <b1>软件工程</b1>本科在读, 社会实践型项目, 滑铁卢, 加拿大, 2011至今
+          
+            <ul>
+            	<li class="targets" id="leadership">软件工程 2017级实验班<a href="http://uwaterloo.ca/software-engineering/current-undergraduate-students/class-2017-1a#class%20reps"  target="_blank">班级代表</a></li>
+            
+            	<li class="targets" id="python">相关必修课程包括<b1>编程规则</b1> (C语言), 以及 <b1>软件工程基本规则</b1> (<a href="http://en.wikipedia.org/wiki/Institute_for_Personal_Robots_in_Education" class="info" target="_blank">Myro 机器人</a> 项目，使用Python语言)</li>
+            	
+            </ul>
+            
+            </li>
+            
+            
+            <li><b2>完成的相关课程</b2>
+          
+            <ul>
+            	<li class="targets" id="opengl">完成<a href="http://www-inst.eecs.berkeley.edu/~cs184" target="_blank">基本计算机图形计算</a>于美国加州大学伯克利分校（BerkelyX）</li>
+  
+            </ul></li></ul></article>
+      
+      
+      
+      
+    <h2>工作经历</h2>
+ 
+    <article>
+    	<ul class="noBullets" id="work">
+        	
+        	
+        	
+        	
+        	
+        	<li><b2>网络开发工程师</b2>, <a href="http://www.tedxuw.com/" class="info" target="_blank">TEDx</a>, 滑铁卢市, 安大略省, 加拿大, 9月 &ndash; 11月 2012年
+            
+            <ul>
+            	
+            	<li class="targets" id="info_web">
+            	
+            	合作设计并开发 <a href="http://www.tedxuw.com/"  target="_blank">TEDxUW 在线模拟交互游戏</a> (HTML5+CSS3, JavaScript, Apache 以及 form-tools)
+            		            	
+            	</li>
+            	
+            	<li>
+            	
+            	在TEDx的活动中演示，并实时操作后台，取得百人同时在线的并成功运行
+	            	
+            	</li> 
+            	
+            </ul>
+            </li>
+
+
+
+        	
+        	
+        	
+        	<li><b2>技术总监</b2>, <a href="http://www.laurelcanada.com/" class="info" target="_blank">加拿大罗兰学院</a>, 剑桥市, 安大略省, 加拿大, 一月 &ndash; 七月 2012年
+            
+            <ul>
+            	
+            	<li class="targets" id="onlinelearning">
+            	
+            	在学院<a href="http://laurelonlinelearning.com">远程网络教学中心</a>担任经理助理， 管理并维护整个网络中心的运行 (Adobe Connect)
+            		            	
+            	</li>
+            	
+            	<li class="targets" id="info_web">
+            	
+            	重新设计、规划、预算、开发并维护学院以信息为基础的网站 (PHP/MySQL + Google Apps)
+            		            	
+            	</li>
+            	
+            	<li>
+            	
+            	带领解决信息技术相关的所有学院的问题，如网络端口统一化设置、网络框架维护、学生成绩更新系统等
+	            	
+            	</li>
+            	
+            </ul>
+            </li>
+            
+            
+            <li><b2>网络开发工程师</b2>, <a href="http://www.digitalshiftmarketing.com/" class="info" target="_blank">Digital Shift Marketing Inc.</a>, 多伦多市, 安大略省, 加拿大, 五月 &ndash; 八月 2011年
+            
+            <ul>
+            	
+            	<li class="targets" id="info_web">
+            	
+            	设计公司相关的网站与Logo (Photoshop, HTML5+CSS3)
+            		            	
+            	</li>
+            	
+            	<li class="targets" id="iosapp">
+            	
+            	共同管理公司的市场工作，了解网络市场营销与网络科技营销的基本步骤与规则 (Google AdSense)
+	            	
+            	</li>
+            
+            	
+            </ul>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <li><b2>软件工程师助理</b2>, <a href="http://www.pureandnoble.com/" class="info" target="_blank">Pure and Noble Inc.</a>, 滑铁卢市, 安大略省, 加拿大, 一月 &ndash; 四月 2011
+            
+            <ul>
+            	
+        	<li class="targets" id="iosapp">
+            	
+            	参与设计、开发与维护三个iPhone应用程式 (使用 Instruments, Xcode 以及 Gimp | Objective-C)
+	            	
+            	</li>
+           
+            	
+            	
+            	<li class="targets" id="info_web">
+            	
+            	协助管理软件规划与公司设备维护
+            		            	
+            	</li>
+            	
+            
+            	<li>
+            	
+            	创意、导演并后期制作了一部公司产品相关广告
+	            	
+            	</li>
+            	
+            </ul>
+            </li>
+            
+            
+                </article>
+
+
+
+
+      <h2>业余工作</h2>
+      <article>
+      
+      		<ul class="noBullets" id="extra">
+      		            
+            
+            <li><b2>网页设计</b2>, <a href="#" class="info" target="_blank">Simon's Group</a>, 2012
+            
+            <ul>
+            	
+            	<li class="targets" id="info_web">
+            	
+            	为中国市场设计、开发并运营一个 <a href="#" target="_blank">类似 Car-pool 的网站</a> (HTML5/CSS3, Java, JSP, Apache, mySQL)
+            		            	
+            	</li>
+            	            	
+            </ul>
+            </li>
+
+
+            
+            <li><b2>小组经理</b2>, 笔记分享网站 (<a href="http://www.uwse.ca/" class="info" target="_blank">2011</a> <a href="http://www.se17.ca/" class="info" target="_blank">2012</a>), 2011 &#126; 2012
+            
+            <ul>
+            	
+            	<li class="targets" id="info_web">
+            	
+            	为滑铁卢大学在校生成立了一个用语笔记分享和信息汇集的社交类网站（如期末倒计时、作业截止时间） (HTML5 + CSS3)
+            		            	
+            	</li>
+            	
+            	<li>
+            	
+				运行30天，在没有广告的情况下获得647个常在用户，219人同时在线，112,000次点击量，1.7G流量。
+					            	
+            	</li> 
+            	
+            </ul>
+            </li>
+            
+            
+            
+            <li><b2>其它开发工作</b2>
+            
+            <ul>
+            	
+            	<li>
+            	
+            		为加拿大RIM公司（黑莓手机开发公司）开发一个应用程式而获得一台免费的Playbook (Java, 2011)
+	            	
+            	</li>
+            	
+            	<li class="targets" id="java">
+            	
+            		   在11年级的高中计算机实验课中开发了一个 <a href="http://jam.wrdsb.ca/math/ics-4ui" target="_blank">类似 Super-Mario 的游戏</a> (Java, NetBeans), 被评为当年学年第一. (2010) 	
+            	</li> 
+            	
+            </ul>
+            </li>
+
+
+      		</ul>
+      </article>
+
+
+
+
+
+
+      <h2>荣誉</h2>
+      <div id="awards">
+          <ul>
+              <li>校长优秀奖学金, 滑铁卢大学, 2011</li>
+              <li>学术优秀荣誉, Sir John A. MacDonald 高中, 滑铁卢, ON, 2010</li>
+
+          </ul>
+      </div>
+
+</body>
+</html>
